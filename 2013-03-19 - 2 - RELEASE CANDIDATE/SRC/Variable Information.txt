@@ -1,0 +1,28 @@
+A -- main sprite animation counter, also used to determine how many times an object moves per cycle
+B -- main animation, which sprite to draw
+D -- Distance between Object and Center, etc. (contributes to how much pull you have)
+E -- Black Hole X
+F -- Black Hole Y
+G -- Random number used to generate direction of initial ship movement
+H -- distance value, not absolute value
+J -- used to handle stars, both generating and for drawing cycles
+K -- Score
+M -- Contrast when program is executed
+N -- Number of objects
+O -- used to cycle contrast down to starting position
+P -- used to deal with the high score appvar
+T -- Timer
+X -- how much to decrement X by (i.e., pull that you exert on an object)
+Y -- how much to decrement Y by (i.e., pull that you exert on an object)
+Z -- object cycling counter, used for generation and movement purposes
+
+
+Z+L1 - Obj X
+Z+L2 - Obj Y
+Z+N+L1 -- Object thrust (specific to object), also used to draw object (1-4 is possible)
+Z+N+N+L1 -- Object moving X axis --> -1 = left, +1 = right, 0 = no
+Z+N+N+L2 -- Object moving Y axis --> -1 = up, +1 down, 0 = no
+
+{(J+N+N+N)+L1} -- star pos X
+{(J+N+N+N)+L2} -- star pos Y
+
